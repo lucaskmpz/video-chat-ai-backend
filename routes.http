@@ -23,3 +23,15 @@ Content-Type: application/json
 {
     "prompt": "upload file"
 }
+
+###
+
+# @name generate-ai-completion
+POST http://localhost:3333/ai/complete
+Content-Type: application/json
+
+{
+    "videoId": "3d8221bf-f136-4ac8-9b67-2cf0102a2a82",
+    "temperature": 0.5,
+    "template": "Generate a summary on the transcription from the following video: '''{transcription}'''"
+}
